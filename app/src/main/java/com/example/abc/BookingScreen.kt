@@ -13,12 +13,12 @@ class BookingScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking_screen)
 
-        var departuretime: TextView =  findViewById<TextView>(R.id.Tv1)
+        var departuretime: TextView =  findViewById<TextView>(R.id.Tv5)
         var airportto: TextView = findViewById<TextView>(R.id.Tv2)
         var airportfrom: TextView = findViewById<TextView>(R.id.Tv3)
-        var airlinename: TextView =findViewById<TextView>(R.id.Tv4)
-        var price: TextView = findViewById<TextView>(R.id.Tv5)
-        var arrivaltime: TextView = findViewById<TextView>(R.id.Tv6)
+        var airlinename: TextView =findViewById<TextView>(R.id.Tv1)
+        var price: TextView = findViewById<TextView>(R.id.Tv6)
+        var arrivaltime: TextView = findViewById<TextView>(R.id.Tv4)
 
         val intent = intent
         departuretime.setText(intent.getStringExtra("departuretime"));

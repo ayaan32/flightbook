@@ -37,27 +37,27 @@
                     android:textColor="@color/purple_700"
                     android:textAlignment="center"
                     android:layout_height="wrap_content"/>
-            <soup.neumorphism.NeumorphCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                style="@style/Widget.Neumorph.CardView"
-                tools:ignore="MissingClass">
-                <TextView
-                    android:id="@+id/Tv2"
+                <soup.neumorphism.NeumorphCardView
                     android:layout_width="wrap_content"
-                    android:paddingRight="30sp"
-                    android:paddingLeft="30sp"
-                    android:paddingBottom="20sp"
-                    android:paddingTop="20sp"
-                    android:text="hellolllllllllll"
-                    android:layout_weight="1"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:textAlignment="center"
-                    android:layout_height="wrap_content"/>
-            </soup.neumorphism.NeumorphCardView>
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    style="@style/Widget.Neumorph.CardView"
+                    tools:ignore="MissingClass">
+                    <TextView
+                        android:id="@+id/Tv2"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="30sp"
+                        android:paddingLeft="30sp"
+                        android:paddingBottom="20sp"
+                        android:paddingTop="20sp"
+                        android:text="hellolllllllllll"
+                        android:layout_weight="1"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+                </soup.neumorphism.NeumorphCardView>
             </LinearLayout>
 
             <ImageView
@@ -74,6 +74,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
@@ -83,27 +84,25 @@
                     android:textColor="@color/purple_700"
                     android:textAlignment="center"
                     android:layout_height="wrap_content"/>
-            <soup.neumorphism.NeumorphCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                style="@style/Widget.Neumorph.CardView"
-                tools:ignore="MissingClass">
-                <TextView
-                    android:id="@+id/Tv3"
+                <soup.neumorphism.NeumorphCardView
                     android:layout_width="wrap_content"
-                    android:paddingRight="30sp"
-                    android:paddingLeft="30sp"
-                    android:paddingBottom="20sp"
-                    android:paddingTop="20sp"
-                    android:text="hellolllllllllll"
-                    android:layout_weight="1"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:textAlignment="center"
-                    android:layout_height="wrap_content"/>
-            </soup.neumorphism.NeumorphCardView>
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Neumorph.CardView"
+                    tools:ignore="MissingClass">
+                    <TextView
+                        android:id="@+id/Tv3"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="30sp"
+                        android:paddingLeft="30sp"
+                        android:paddingBottom="20sp"
+                        android:paddingTop="20sp"
+                        android:text="hellolllllllllll"
+                        android:layout_weight="1"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+                </soup.neumorphism.NeumorphCardView>
             </LinearLayout>
 
         </LinearLayout>
@@ -115,66 +114,87 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
-            <soup.neumorphism.NeumorphCardView
-                android:layout_width="150sp"
-                android:layout_height="125sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                style="@style/Widget.Neumorph.CardView"
-                tools:ignore="MissingClass">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="60sp"
+                    app:srcCompat="@drawable/ic_person_foreground"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:text="Passenger"
-                    android:textSize="20sp"
-                    android:textColor="@color/purple_700"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/Tv6"
-                    android:layout_width="wrap_content"
-                    android:text="hellolllllllllll"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:layout_height="wrap_content"/>
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="150sp"
+                    android:layout_height="125sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    style="@style/Widget.Neumorph.CardView"
+                    tools:ignore="MissingClass">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Passenger"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple_700"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/Tv6"
+                            android:layout_width="wrap_content"
+                            android:text="Ayaan"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </soup.neumorphism.NeumorphCardView>
             </LinearLayout>
-            </soup.neumorphism.NeumorphCardView>
-
-            <soup.neumorphism.NeumorphCardView
-                android:layout_width="150sp"
-                android:layout_height="125sp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                style="@style/Widget.Neumorph.CardView"
-                tools:ignore="MissingClass">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:text="Flight"
-                    android:textSize="20sp"
-                    android:textColor="@color/purple_700"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/Tv1"
-                    android:layout_width="wrap_content"
-                    android:text="hellolllllllllll"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:layout_height="wrap_content"/>
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    app:srcCompat="@drawable/flighticon"/>
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="150sp"
+                    android:layout_height="125sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    style="@style/Widget.Neumorph.CardView"
+                    tools:ignore="MissingClass">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Flight"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple_700"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/Tv1"
+                            android:layout_width="wrap_content"
+                            android:text="hellolllllllllll"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </soup.neumorphism.NeumorphCardView>
             </LinearLayout>
-        </soup.neumorphism.NeumorphCardView>
 
         </LinearLayout>
 
@@ -186,7 +206,30 @@
             android:gravity="center"
             android:paddingHorizontal="10dp"
             android:orientation="horizontal">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="60sp"
+                    app:srcCompat="@drawable/boarding"/>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="125sp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                style="@style/Widget.Neumorph.CardView"
+                tools:ignore="MissingClass">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -194,57 +237,66 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Boarding"
-                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/Tv5"
                     android:layout_width="wrap_content"
                     android:text="hellolllllllllll"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="17sp"
                     android:textColor="@color/black"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
-
+            </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="60sp"
+                    android:layout_height="70sp"
+                    app:srcCompat="@drawable/departureicon"/>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="125sp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                style="@style/Widget.Neumorph.CardView"
+                tools:ignore="MissingClass">
+            <LinearLayout
+                android:layout_marginTop="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Depart"
-                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/Tv4"
                     android:layout_width="wrap_content"
                     android:text="hellolllllllllll"
                     android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:textSize="18sp"
                     android:textColor="@color/black"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
+            </soup.neumorphism.NeumorphCardView>
 
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:text="Gate"
-                    android:textColor="@color/black"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:id="@+id/Tv7"
-                    android:layout_width="wrap_content"
-                    android:textAlignment="center"
-                    android:text="A4"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:layout_height="wrap_content"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -252,7 +304,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
         android:gravity="center">
@@ -260,7 +312,8 @@
             android:id="@+id/bookflightbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Book Flight" />
+            android:text="Book Flight"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
 </LinearLayout>
