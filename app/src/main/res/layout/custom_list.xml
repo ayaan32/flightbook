@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        style="@style/Widget.Neumorph.CardView"
+        tools:ignore="MissingClass">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginVertical="1sp"
+        android:layout_marginHorizontal="1sp"
+        android:background="@drawable/rounded_corners"
+        android:layout_height="320sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="120sp"
+                android:layout_height="100sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed"
+                tools:ignore="MissingClass">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+            android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/arrivaltime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="15:30"/>
+
+                <TextView
+                    android:id="@+id/airportfrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15dp"
+                    android:text="LKO"/>
+            </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.078"
+                app:srcCompat="@drawable/right_arrow"/>
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="120sp"
+                android:layout_height="100sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed"
+                tools:ignore="MissingClass">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/departuretime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="15:30"/>
+
+                <TextView
+                    android:id="@+id/airportto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15dp"
+                    android:text="LKO"/>
+            </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.078"
+                    app:srcCompat="@drawable/flighticon"/>
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.Neumorph.CardView"
+                tools:ignore="MissingClass">
+
+
+
+            <TextView
+                android:id="@+id/airlinename"
+                android:paddingBottom="15sp"
+                android:paddingTop="15sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textFontWeight="900"
+                android:textColor="@color/purple_700"
+                android:text="Airline Name"/>
+            </soup.neumorphism.NeumorphCardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="50sp"
+                    app:srcCompat="@drawable/rupeeicon"/>
+
+
+
+
+                <soup.neumorphism.NeumorphCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Neumorph.CardView"
+                tools:ignore="MissingClass">
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="Rs.320"/>
+            </soup.neumorphism.NeumorphCardView>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+</LinearLayout>

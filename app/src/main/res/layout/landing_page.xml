@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/firstscreenbg"
+    tools:context=".LandingPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/LandingPageHeading"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corners"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/departure"
+                android:layout_marginLeft="50sp"
+                android:textSize="20sp"
+                android:textFontWeight="950"
+                android:textColor="@color/black"
+                android:layout_marginStart="25sp"
+                />
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed"
+                tools:ignore="MissingClass">
+            <Spinner
+                android:id="@+id/spinCountryFrom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="8dp"
+                android:popupBackground="@android:color/background_light"
+                android:background="@drawable/rounded_spinner"
+                android:layout_marginBottom="20dp"
+                android:spinnerMode="dropdown"
+                tools:ignore="RtlSymmetry" />
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+                android:layout_marginTop="60sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arrival_spinner_text"
+                android:layout_marginLeft="50sp"
+                android:textSize="20sp"
+                android:textFontWeight="950"
+                android:textColor="@color/black"
+                android:layout_marginStart="25sp"
+                />
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed"
+                tools:ignore="MissingClass">
+                <Spinner
+                    android:id="@+id/spinCountryTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="8dp"
+                    android:popupBackground="@android:color/background_light"
+                    android:background="@drawable/rounded_spinner"
+                    android:layout_marginBottom="20dp"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="RtlSymmetry" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:ignore="NestedWeights"
+                android:orientation="horizontal">
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    style="@style/Widget.Neumorph.CardView"
+                    app:neumorph_shapeType="pressed"
+                    tools:ignore="MissingClass">
+                <Button
+                    android:id="@+id/datePickerButtonfrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jan_01_2020_againn"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    style="?android:spinnerStyle"/>
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    style="@style/Widget.Neumorph.CardView"
+                    app:neumorph_shapeType="pressed"
+                    tools:ignore="MissingClass">
+                    <Button
+                        android:id="@+id/datePickerButtonto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/jan_01_2020_againn"
+                        android:layout_margin="10dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        style="?android:spinnerStyle"/>
+                </soup.neumorphism.NeumorphCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/searchflightsbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_flight"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
