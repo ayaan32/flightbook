@@ -2,7 +2,7 @@
     <string name="app_name">Flight</string>
     <string name="LandingPageHeading">Book Flight</string>
     <string name="let_s_get_started">Let\'s book your flight</string>
-    <string name="email">Email</string>
+    <string name="email">UserName</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="search_flights">Search Flights</string>

@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
 import android.widget.Toast
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -19,9 +21,12 @@ class LandingPage : AppCompatActivity() {
 
     @SuppressLint("WeekBasedYear")
     var formatDate=SimpleDateFormat("dd MMM YYYY", Locale.US)
-    val players= arrayOf("Mangalore-IXE","Pune-PNQ","Delhi_DEL","Lucknow-LKO")
+    val players= arrayOf("KNP","PNQ","BOM","LKO")
 
+    var placeselected1:String=""
+    var placeselected2:String=""
 
+    val db = Firebase.firestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.landing_page)
@@ -75,7 +80,8 @@ class LandingPage : AppCompatActivity() {
         spinner.adapter=arrayAdapter
         spinner.onItemSelectedListener= object: AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                Toast.makeText(this@LandingPage,players[p2],Toast.LENGTH_SHORT).show()
+                placeselected1=players[p2]
+//                Toast.makeText(this@LandingPage,players[p2],Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
@@ -87,8 +93,9 @@ class LandingPage : AppCompatActivity() {
         spinner2.adapter=arrayAdapter2
         spinner2.onItemSelectedListener= object: AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                Toast.makeText(this@LandingPage,players[p2],Toast.LENGTH_SHORT).show()
-            }
+                placeselected2=players[p2]
+//                Toast.makeText(this@LandingPage,players[p2],Toast.LENGTH_SHORT).show()
+         }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
                 TODO("Not yet implemented")
@@ -97,6 +104,8 @@ class LandingPage : AppCompatActivity() {
         val searchflightsbutton = findViewById<Button>(R.id.searchflightsbutton)
         searchflightsbutton.setOnClickListener {
             val intent = Intent(this, ListScreen::class.java)
+            intent.putExtra("place1",placeselected1);
+            intent.putExtra("place2",placeselected2);
             startActivity(intent)
         }
     }

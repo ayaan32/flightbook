@@ -29,6 +29,11 @@ class ListScreen : AppCompatActivity() {
     private lateinit var FlightListAdapter: FlightListAdapter
     var result:String="abc"
 
+    var selectedplace1:String=""
+    var selectedplace2:String=""
+
+
+
 //init {
 //    db.collection("Flight")
 //        .get()
@@ -60,6 +65,13 @@ class ListScreen : AppCompatActivity() {
 
 //        binding = ActivityListScreenBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_list_screen)
+    val intent = intent
+    selectedplace1=(intent.getStringExtra("place1").toString());
+    selectedplace2=(intent.getStringExtra("place2").toString());
+
+
+    Log.d("place1",selectedplace1)
+    Log.d("place2",selectedplace2)
 //        val testbutton = findViewById<Button>(R.id.test)
 //        binding!!.test.setOnClickListener {
 //            fireStoreDatabase.collection("Flight").get().addOnCompleteListener {
@@ -94,7 +106,10 @@ class ListScreen : AppCompatActivity() {
 //                    .addOnFailureListener { exception ->
 //                        Log.w("TAG", "Error getting documents.", exception)
 //                    }
-    db.collection("Flight").get().addOnCompleteListener(OnCompleteListener<QuerySnapshot?> { task ->
+    db.collection("Flight")
+        .whereEqualTo("airport_arrival",selectedplace1)
+        .whereEqualTo("airport_departure",selectedplace2)
+        .get().addOnCompleteListener(OnCompleteListener<QuerySnapshot?> { task ->
         if (task.isSuccessful) {
             for (document in task.result) {
                 FlightList.add(FlightModel(document.data.getValue("arrival_time").toString(),document.data.getValue("departure_time").toString(),document.data.getValue("airport_departure").toString(),document.data.getValue("airport_arrival").toString(),document.data.getValue("airline").toString(),document.data.getValue("price").toString().toDouble()))

@@ -17,7 +17,7 @@ class BookingScreen : AppCompatActivity() {
         var airportto: TextView = findViewById<TextView>(R.id.Tv2)
         var airportfrom: TextView = findViewById<TextView>(R.id.Tv3)
         var airlinename: TextView =findViewById<TextView>(R.id.Tv1)
-        var price: TextView = findViewById<TextView>(R.id.Tv6)
+        //var price: TextView = findViewById<TextView>(R.id.Tv6)
         var arrivaltime: TextView = findViewById<TextView>(R.id.Tv4)
 
         val intent = intent
@@ -25,7 +25,7 @@ class BookingScreen : AppCompatActivity() {
         airportto.setText(intent.getStringExtra("airportto"));
         airportfrom.setText(intent.getStringExtra("airportfrom"));
         airlinename.setText(intent.getStringExtra("airlinename"));
-        price.setText(intent.getStringExtra("price"));
+       // price.setText(intent.getStringExtra("price"));
         arrivaltime.setText(intent.getStringExtra("arrivaltime"));
 
         val bookflightbutton = findViewById<Button>(R.id.bookflightbutton)
